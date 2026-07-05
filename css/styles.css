@@ -213,7 +213,7 @@ img {
   font-size: 1.62rem;
   padding: 12px 23px 12px 12px;
   text-align: center;
-  transform: translateY(clamp(-88px, -5vw, -56px));
+  transform: translateY(clamp(-146px, -8.5vw, -108px));
 }
 
 .hero-brand .heart-mark {
@@ -1223,7 +1223,7 @@ body.thank-you-open {
     gap: 14px;
     font-size: 1.36rem;
     padding: 10px 18px 10px 10px;
-    transform: translateY(-30px);
+    transform: translateY(-52px);
   }
 
   .hero-brand .heart-mark {
