@@ -21,7 +21,7 @@
   --soft-shadow: 0 14px 34px rgba(66, 55, 50, 0.09);
   --radius: 16px;
   --max-width: 1120px;
-  --hero-width: 1480px;
+  --hero-width: 1560px;
 }
 
 * {
@@ -161,9 +161,10 @@ img {
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(370px, 0.65fr) minmax(600px, 1.35fr);
+  grid-template-columns: minmax(320px, 0.6fr) minmax(0, 1.4fr);
   align-items: center;
-  gap: clamp(34px, 4.8vw, 78px);
+  column-gap: clamp(34px, 4.8vw, 78px);
+  row-gap: clamp(18px, 3vw, 34px);
   width: min(calc(100% - 32px), var(--hero-width));
   min-height: calc(100vh - 82px);
   margin: 0 auto;
@@ -204,6 +205,13 @@ img {
   max-width: 560px;
 }
 
+.hero-brand {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin: 0;
+  text-align: center;
+}
+
 h1,
 h2,
 h3,
@@ -219,6 +227,10 @@ h1 {
   max-width: 12ch;
   margin: 0;
   font-size: clamp(3.05rem, 5.05vw, 4.85rem);
+}
+
+.hero h1 {
+  font-size: clamp(2.55rem, 4.05vw, 4.05rem);
 }
 
 .tagline {
@@ -316,7 +328,7 @@ h1 {
 
 .product-frame {
   display: grid;
-  aspect-ratio: 1714 / 1044;
+  aspect-ratio: 1618 / 972;
   min-height: 0;
   place-items: center;
   border: 1px solid rgba(169, 145, 208, 0.14);
@@ -335,16 +347,6 @@ h1 {
   width: 100%;
   max-height: 100%;
   object-fit: contain;
-}
-
-.product-showcase figcaption {
-  max-width: 520px;
-  margin: 18px auto 32px;
-  color: #7A726F;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
 }
 
 .features,
