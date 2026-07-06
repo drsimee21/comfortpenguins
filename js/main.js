@@ -60,7 +60,7 @@
 
     var message = document.createElement("p");
     message.id = "thank-you-message";
-    message.textContent = "We'll be in touch when Comfort Penguin Co. is ready to launch.";
+    message.textContent = "We'll be in touch when Comfort Penguins is ready to launch.";
 
     var closeButton = document.createElement("button");
     closeButton.className = "button button--primary thank-you-close";
