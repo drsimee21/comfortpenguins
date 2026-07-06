@@ -208,18 +208,18 @@ img {
 .hero-brand {
   grid-column: 1 / -1;
   justify-self: center;
-  gap: 16px;
+  gap: 13px;
   margin: 0;
-  font-size: 1.43rem;
-  padding: 11px 20px 11px 11px;
+  font-size: 1.14rem;
+  padding: 9px 16px 9px 9px;
   text-align: center;
   transform: translateY(clamp(-146px, -8.5vw, -108px));
 }
 
 .hero-brand .heart-mark {
-  width: 49px;
-  height: 49px;
-  font-size: 1.82rem;
+  width: 39px;
+  height: 39px;
+  font-size: 1.46rem;
   -webkit-text-stroke-width: 2px;
 }
 
@@ -1220,16 +1220,16 @@ body.thank-you-open {
   }
 
   .hero-brand {
-    gap: 12px;
-    font-size: 1.2rem;
-    padding: 9px 16px 9px 9px;
+    gap: 10px;
+    font-size: 0.96rem;
+    padding: 7px 13px 7px 7px;
     transform: translateY(-52px);
   }
 
   .hero-brand .heart-mark {
-    width: 41px;
-    height: 41px;
-    font-size: 1.55rem;
+    width: 33px;
+    height: 33px;
+    font-size: 1.24rem;
   }
 
   .hero::before {
