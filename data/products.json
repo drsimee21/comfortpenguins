@@ -1,0 +1,41 @@
+{
+  "store": {
+    "name": "Comfort Penguins",
+    "url": "https://comfortpenguins.com/",
+    "feed_url": "https://comfortpenguins.com/product-feed.xml",
+    "default_currency": "USD",
+    "default_country": "US"
+  },
+  "products": [
+    {
+      "id": "comfort-penguins-soft-penguin-plush",
+      "active": false,
+      "status_note": "Draft only. Set active to true after the product has a real visible price, availability, product page, and shipping details.",
+      "title": "Comfort Penguins Soft Penguin Plush",
+      "description": "A soft penguin plush concept with a hidden memory pouch, an \"I'm here.\" comfort tag, an embroidered heart, and a lightly weighted bottom.",
+      "link": "https://comfortpenguins.com/",
+      "image_link": "https://comfortpenguins.com/assets/images/comfort-penguin.jpg",
+      "additional_image_link": [],
+      "availability": "preorder",
+      "availability_date": "",
+      "price": "",
+      "sale_price": "",
+      "brand": "Comfort Penguins",
+      "condition": "new",
+      "google_product_category": "Toys & Games > Toys > Stuffed Toys",
+      "product_type": "Plush Toys > Penguin Plush",
+      "color": "Gray, white, orange, red",
+      "size": "One size",
+      "material": "Plush fabric",
+      "item_group_id": "",
+      "shipping": [
+        {
+          "country": "US",
+          "region": "",
+          "service": "Standard",
+          "price": ""
+        }
+      ]
+    }
+  ]
+}
