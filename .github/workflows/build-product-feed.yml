@@ -1,0 +1,42 @@
+name: Build product feed
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - data/products.json
+      - scripts/generate-product-feed.py
+      - .github/workflows/build-product-feed.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-product-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate product feed
+        run: python scripts/generate-product-feed.py
+
+      - name: Commit updated feed
+        run: |
+          if git diff --quiet -- product-feed.xml; then
+            echo "product-feed.xml is already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add product-feed.xml
+          git commit -m "Update generated product feed"
+          git push
